@@ -113,7 +113,26 @@ body {
   font-family: TUfont;
 }
 
-.griddle-table {
+.transactions table {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.table-headers th {
+  font-family: TUfont;
+  font-size: 35px;
+  width: 35ex;
+  border-bottom:solid 3px black;
+}
+
+.table-entries td {
+  padding-top: 1ex;
+  font-family: TUfont;
+  font-size: 27px;
+  width: 35ex;
+}
+
+/* .griddle-table {
   padding-top: 20px;
   margin-left: 10%;
   width: 80%;
@@ -129,4 +148,4 @@ body {
 .griddle-cell {
   font-size: 25px;
   padding-top: 15px;
-}
+} */
