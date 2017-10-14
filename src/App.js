@@ -8,6 +8,9 @@ import {
 import Home from "./components/Home";
 import Cards from "./components/Cards";
 import Transactions from "./components/Transactions"
+import Inqueries from "./components/Inqueries"
+import DerogatoryMarks from "./components/DerogatoryMarks"
+
 
 // Importing logos
 
@@ -25,6 +28,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/cards" component={Cards} />
           <Route exact path="/transactions" component={Transactions} />
+          <Route exact path="/inqueries" component={Inqueries} />
+          <Route exact path="/derogatorymarks" component={DerogatoryMarks} />
         </div>
       </Router>
     );
