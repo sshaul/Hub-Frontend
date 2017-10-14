@@ -6,7 +6,7 @@ class Profile extends Component {
     render() {
         return (
             <div className="profile">
-                <img alt="Profile Image" src={ProfileImg} />
+                <img className="animated fadeInUp" alt="Profile Image" src={ProfileImg} />
             </div>
         );
     }
