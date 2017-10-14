@@ -9,7 +9,7 @@ body {
 /*----Custom regular intro font-----*/
 @font-face {
   font-family:TUfont;
-  src:url(IntroRegularAlt.ttf);
+  src:url(IntroRegular.ttf);
 }
 
 /*-------------------- Home Page --------------------*/
