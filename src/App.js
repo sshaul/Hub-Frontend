@@ -10,12 +10,14 @@ import {Animated} from "react-animated-css";
 import Home from "./components/Home";
 import Cards from "./components/Cards";
 
+
 // Importing CSS
 import './App.css';
 import FooterLogo from './icons/logo.png'
 
 class App extends Component {
   render() {
+    document.body.style.backgroundColor = "#00A6CA";
     return (
       <Router>
         <div className="App">
