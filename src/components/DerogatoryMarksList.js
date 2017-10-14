@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Animated} from "react-animated-css";
 
 class DerogatoryMarksList extends Component {
 
@@ -11,7 +12,7 @@ class DerogatoryMarksList extends Component {
 
   componentDidMount() {
 
-  fetch('http://54.148.219.23/marks/1')
+  fetch('http://52.41.111.0/marks/1')
     .then(results =>{
       return results.json();
     }).then(data => {
@@ -37,20 +38,22 @@ class DerogatoryMarksList extends Component {
 
   render() {
     return(
-      <table>
-      <tr className="table-headers">
-        <th>Date Received</th>
-        <th>Date Expires</th>
-        <th>Description</th>
-      </tr>
-      {this.state.marks.map(mark =>
-        <tr className="table-entries">
-          <td>{mark.date_received}</td>
-          <td>{mark.date_expires}</td>
-          <td>{mark.description}</td>
+      <Animated animateIn="fadeInUp" animationInDelay="0">
+        <table>
+        <tr className="table-headers">
+          <th>Date Received</th>
+          <th>Date Expires</th>
+          <th>Description</th>
         </tr>
-       )}
-       </table>
+        {this.state.marks.map(mark =>
+          <tr className="table-entries">
+            <td>{mark.date_received}</td>
+            <td>{mark.date_expires}</td>
+            <td>{mark.description}</td>
+          </tr>
+        )}
+        </table>
+      </Animated>
     )
   }
 }

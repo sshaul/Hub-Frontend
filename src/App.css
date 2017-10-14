@@ -26,8 +26,23 @@ body {
   box-shadow: 7px 7px #494949; 
 }
 
+.node h3 {
+  visibility: hidden;
+}
+
 .node:hover img {
   transform: scale(1.1);
+}
+
+.node:hover h3 {
+  visibility: visible;
+  width: 120px;
+  color: white;
+  font-family: TUfont;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left:-5px;
+  text-align:center;
 }
 
 .profile {
@@ -140,6 +155,7 @@ body {
 }
 
 .list-table {
+  padding-top: 20px;
   width: 80%;
   margin-left: 10%;
 }
@@ -154,24 +170,13 @@ body {
 .table-entries td {
   padding-top: 1ex;
   font-family: TUfont;
-  font-size: 27px;
+  font-size: 23px;
   width: 35ex;
 }
 
-/* .griddle-table {
-  padding-top: 20px;
-  margin-left: 10%;
-  width: 80%;
+.doughnutClass {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
-
-.griddle-table-heading-cell {
-  font-family: TUfont;
-  font-size: 35px;
-  padding-bottom: 10px;
-  border-bottom: solid 3px black;
-}
-
-.griddle-cell {
-  font-size: 25px;
-  padding-top: 15px;
-} */

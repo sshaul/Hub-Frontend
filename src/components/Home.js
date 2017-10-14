@@ -22,11 +22,11 @@ class Home extends Component {
         return (
             <div className="Home">
                 <div className="content">
-                    <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" /></Link>
-                    <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" />
-                    <Link to="transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" /></Link>
-                    <Link to="inquiries"><Node icon={Inquery} nodeid="node-4" loadwait="1.6" /></Link>
-                    <Link to="derogatorymarks"><Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" /></Link>
+                    <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" nodename="Credit Cards" /></Link>
+                    <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" nodename="Credit Score" />
+                    <Link to="transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" nodename="Transactions" /></Link>
+                    <Link to="inquiries"><Node icon={Inquery} nodeid="node-4" loadwait="1.6" nodename="Inquiry History" /></Link>
+                    <Link to="derogatorymarks"><Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" nodename="Derogatory Marks" /></Link>
                     <Profile />
                 </div>
                 <div className="footer">
