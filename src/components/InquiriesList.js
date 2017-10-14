@@ -15,6 +15,7 @@ class InquiriesList extends Component {
 
   fetch('http://52.41.111.0/inquiries/1')
     .then(results =>{
+      console.log(results);
       return results.json();
     }).then(data => {
       var val;
