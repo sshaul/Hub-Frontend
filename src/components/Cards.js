@@ -20,7 +20,7 @@ class Cards extends Component {
     componentDidMount() {
         var usage = 0;
         var cards = [];
-        fetch('http://54.148.219.23/simplecards/1')
+        fetch('http://52.41.111.0/simplecards/1')
         .then(results => {
             return results.json();
         }).then(jsonResult => {

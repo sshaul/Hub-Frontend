@@ -8,6 +8,7 @@ import {
 import Home from "./components/Home";
 import Cards from "./components/Cards";
 import Transactions from "./components/Transactions"
+import Credit from "./components/Credit"
 import Inquiries from "./components/Inquiries"
 import DerogatoryMarks from "./components/DerogatoryMarks"
 
@@ -28,6 +29,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/cards" component={Cards} />
           <Route exact path="/transactions" component={Transactions} />
+          <Route exact path="/credit" component={Credit} />
           <Route exact path="/inquiries" component={Inquiries} />
           <Route exact path="/derogatorymarks" component={DerogatoryMarks} />
         </div>

@@ -180,3 +180,13 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+/*-------------------- Credit --------------------*/
+.Credit h1 {
+  text-align: center;
+}
+
+.chart {
+  width:60%;
+  margin: 0 auto;
+}

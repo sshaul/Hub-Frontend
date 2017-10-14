@@ -23,10 +23,10 @@ class Home extends Component {
             <div className="Home">
                 <div className="content">
                     <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" nodename="Credit Cards" /></Link>
-                    <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" nodename="Credit Score" />
-                    <Link to="transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" nodename="Transactions" /></Link>
-                    <Link to="inquiries"><Node icon={Inquery} nodeid="node-4" loadwait="1.6" nodename="Inquiry History" /></Link>
-                    <Link to="derogatorymarks"><Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" nodename="Derogatory Marks" /></Link>
+                    <Link to="/credit"><Node icon={CreditScore} nodeid="node-2" loadwait="1.8" nodename="Credit Score"/></Link>
+                    <Link to="/transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" nodename="Transactions" /></Link>
+                    <Link to="/inquiry"><Node icon={Inquery} nodeid="node-4" loadwait="1.6" nodename="Inquiry History" /></Link>
+                    <Link to="/derogatorymarks"><Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" nodename="Derogatory Marks" /></Link>
                     <Profile />
                 </div>
                 <div className="footer">
