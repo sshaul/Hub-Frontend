@@ -6,9 +6,7 @@ class Node extends Component {
       return (
         <div className="node" id={this.props.nodeid}>
           <Animated animationIn="fadeIn" animationInDelay={this.props.loadwait}>
-            <a href="#">
-              <img alt="Node Image" src={this.props.icon} />
-            </a>
+            <img alt="Node" src={this.props.icon} />
           </Animated>
         </div>
       );

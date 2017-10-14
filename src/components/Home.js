@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import {Animated} from "react-animated-css";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-  } from 'react-router-dom';
+  
 
 // Importing other components
 import Node from './Node'
@@ -16,18 +13,29 @@ import CreditScore from '../icons/CreditScore.png'
 import Transaction from '../icons/Transaction.png'
 import Inquery from '../icons/Inquery.png'
 import DerogatoryMark from '../icons/DerogatoryMark.png'
+import FooterLogo from '../icons/logo.png'
 
 class Home extends Component {
     render() {
+        document.body.style.backgroundColor = "#00A6CA";        
+
         return (
             <div className="Home">
-                <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" /></Link>
-                <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" />
-                <Node icon={Transaction} nodeid="node-3" loadwait="1.2" />
-                <Node icon={Inquery} nodeid="node-4" loadwait="1.6" />
-                <Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" />
-                <Profile />
+                <div className="content">
+                    <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" /></Link>
+                    <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" />
+                    <Link to="transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" /></Link>
+                    <Node icon={Inquery} nodeid="node-4" loadwait="1.6" />
+                    <Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" />
+                    <Profile />
+                </div>
+                <div className="footer">
+                    <Animated animationIn="fadeIn" animationInDelay="2">
+                        <img alt="Logo" src={FooterLogo} />
+                    </Animated>
+                </div>
             </div>
+            
         )
     }
 }

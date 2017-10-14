@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
-import {Animated} from "react-animated-css";
 
 // Importing other components
 import Home from "./components/Home";
 import Cards from "./components/Cards";
+import Transactions from "./components/Transactions"
+
+// Importing logos
+
 
 
 // Importing CSS
 import './App.css';
-import FooterLogo from './icons/logo.png'
 
 class App extends Component {
   render() {
@@ -21,15 +22,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="content">
-            <Route exact path="/" component={Home} />
-            <Route exact path="/cards" component={Cards} />
-          </div>
-          <div className="footer">
-            <Animated animationIn="fadeIn" animationInDelay="2">
-              <img alt="Logo" src={FooterLogo} />
-            </Animated>
-          </div>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cards" component={Cards} />
+          <Route exact path="/transactions" component={Transactions} />
         </div>
       </Router>
     );

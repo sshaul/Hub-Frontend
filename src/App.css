@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  font-family: TUfont;
 }
 
 body {
@@ -8,8 +9,12 @@ body {
 
 /*----Custom regular intro font-----*/
 @font-face {
-  font-family:TUfont;
+  font-family: TUfont;
   src:url(IntroRegular.ttf);
+}
+@font-face {
+  font-family: TUbold;
+  src:url(IntroBold.otf);
 }
 
 /*-------------------- Home Page --------------------*/
@@ -89,16 +94,31 @@ body {
   width: 250px;
   height: 150px;
   border-radius: 5%;
-  background-color: #FCD800;
+  background-color: #00A6CA;
   box-shadow: 7px 7px #494949;
   margin: 0 auto;
   padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Cards h1, h3 {
+  text-align: center;
+}
+
+.Cards h4 {
+  font-family: TUbold;
+}
+
 
 /*-------------------- Transactions Page --------------------*/
 
 .backButton img {
+  padding-top:10px;
   width: 75px;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .transactions h1 {

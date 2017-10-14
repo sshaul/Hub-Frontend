@@ -9,7 +9,7 @@ class Profile extends Component {
             <div className="profile">
                 <div className="profilePicture">
                     <Animated animationIn="fadeInUp">
-                        <img alt="Profile Image" src={ProfileImg} />
+                        <img alt="Profile" src={ProfileImg} />
                     </Animated>
                 </div>
             </div>
