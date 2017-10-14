@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Griddle from 'griddle-react';
-
 class TransactionList extends Component {
 
   constructor() {
@@ -13,36 +11,42 @@ class TransactionList extends Component {
 
   componentDidMount() {
 
-    fetch('http://54.148.219.23/transactions/1')
+  fetch('http://54.148.219.23/transactions/1')
     .then(results =>{
       return results.json();
     }).then(data => {
-      let transactions = data.map((transaction) => {
-        var date = new Date(Date.parse(transaction.timestamp));
-        return {
-          "Date": date.getUTCMonth() + 1 + "-" + date.getUTCDate() + "-" + date.getUTCFullYear(),
-          "Amount": "$" + transaction.amount,
-          "Merchant": transaction.merchant,
-          "Card": transaction.card_name
-        }
-      })
-      this.setState({transactions: transactions});
+      var val;
+      for (val in data) {
+        var newDate = new Date(Date.parse(data[val].timestamp));
+        data[val].amount = "$" + data[val].amount;
+        data[val].timestamp = newDate.getUTCMonth() + 1 + "-" + newDate.getUTCDay() + "-" + newDate.getUTCFullYear();
+        console.log(data[val].timestamp);
+      }
       console.log("state", this.state.transactions);
+      this.setState({transactions: data});
     })
   }
 
   render() {
     return(
-      <Griddle
-      data={this.state.transactions}
-      components={{Layout: ({ Table, Pagination, Filter, SettingsWrapper }) => (
-        <div>
-          <Table />
-        </div>
-      )}}
-    />)
+      <table>
+      <tr className="table-headers">
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Merchant</th>
+        <th>Card</th>
+      </tr>
+      {this.state.transactions.map(transaction =>
+        <tr className="table-entries">
+          <td>{transaction.timestamp}</td>
+          <td>{transaction.amount}</td>
+          <td>{transaction.merchant}</td>
+          <td>{transaction.card_name}</td>
+        </tr>
+       )}
+       </table>
+    )
   }
-
 }
 
 export default TransactionList;

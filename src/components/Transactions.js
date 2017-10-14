@@ -1,20 +1,11 @@
 import React, {Component} from 'react';
 
-
+import Griddle from 'griddle-react';
 import TransactionList from './TransactionList.js'
 
 class Transactions extends Component {
     render() {
       document.body.style.backgroundColor = "#FCD800";
-      
-      var data = [
-        {
-          "Date": "10/3/2017",
-          "Amount": "$5.99",
-          "Merchant": "Target",
-          "Card": "Chase Freedom"
-        }
-      ];
 
       return (
           <div className="transactions">
@@ -23,7 +14,8 @@ class Transactions extends Component {
             </div>
             <h1>Transactions</h1>
             <div className="transactionTable">
-              <TransactionList />
+                {<TransactionList />}
+
             </div>
           </div>
       );
