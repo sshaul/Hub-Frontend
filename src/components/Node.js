@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class Node extends Component {
     render() {
       return (
-        <div className="node">
-          <img src={this.props.icon} />
+        <div className="node" id={this.props.nodeid}>
+          <img alt="Node Image" src={this.props.icon} />
         </div>
       );
     }

@@ -1,6 +1,12 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #00A6CA;
 }
+
+/*-------------------- Home Page --------------------*/
 
 .node img {
   width: 100px;
@@ -9,7 +15,61 @@ body {
   box-shadow: 7px 7px #494949; 
 }
 
+.profile {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-100px;
+}
+
 .profile img {
   width: 200px;
   height: 200px;
+}
+
+.content {
+  position: relative;
+  height: 90vh;
+}
+
+.footer {
+  height: 10vh;
+}
+
+.footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Node positions */
+#node-1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -55px;
+}
+
+#node-2 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+#node-3 {
+  position: absolute;
+  top: 30%;
+  left: 66%;
+}
+
+#node-4 {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+}
+
+#node-5 {
+  position: absolute;
+  top: 65%;
+  left: 61%;
 }
