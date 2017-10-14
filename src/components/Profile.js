@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Animated} from "react-animated-css";
 
 import ProfileImg from '../icons/profile-image.png';
 
@@ -7,10 +8,9 @@ class Profile extends Component {
         return (
             <div className="profile">
                 <div className="profilePicture">
-                    <img className="animated fadeInUp" alt="Profile Image" src={ProfileImg} />
-                </div>
-                <div className="profileText">
-                    <a class="settings"> Profile Settings </a>
+                    <Animated animationIn="fadeInUp">
+                        <img alt="Profile Image" src={ProfileImg} />
+                    </Animated>
                 </div>
             </div>
         );
