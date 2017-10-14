@@ -11,7 +11,7 @@ class TransactionList extends Component {
 
   componentDidMount() {
 
-  fetch('http://54.148.219.23/transactions/1')
+  fetch('http://52.41.111.0/transactions/1')
     .then(results =>{
       return results.json();
     }).then(data => {

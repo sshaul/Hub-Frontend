@@ -23,7 +23,7 @@ class Home extends Component {
             <div className="Home">
                 <div className="content">
                     <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" /></Link>
-                    <Node icon={CreditScore} nodeid="node-2" loadwait="1.8" />
+                    <Link to="/credit"><Node icon={CreditScore} nodeid="node-2" loadwait="1.8" /></Link>
                     <Link to="/transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" /></Link>
                     <Node icon={Inquery} nodeid="node-4" loadwait="1.6" />
                     <Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" />
