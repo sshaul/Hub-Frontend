@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-
-import Griddle from 'griddle-react';
+import {Link} from 'react-router-dom';
 import TransactionList from './TransactionList.js'
+
+import backbtn from "../black-icons/Backward-Black-RGB-20150106.png"
+
 
 class Transactions extends Component {
     render() {
@@ -9,9 +11,11 @@ class Transactions extends Component {
 
       return (
           <div className="transactions">
-            <div className="backButton">
-              <img alt="Back" src={this.props.back} />
-            </div>
+            <Link to="/">
+              <div className="backButton">
+                <img alt="Back" src={backbtn} />
+              </div>
+            </Link>
             <h1>Transactions</h1>
             <div className="transactionTable">
                 {<TransactionList />}
