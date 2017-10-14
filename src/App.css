@@ -110,7 +110,7 @@ body {
 }
 
 
-/*-------------------- Transactions Page --------------------*/
+/*-------------------- Table Pages --------------------*/
 
 .backButton img {
   padding-top:10px;
@@ -127,7 +127,19 @@ body {
   font-family: TUfont;
 }
 
-.transactions table {
+.inquiries h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: TUfont;
+}
+
+.derogatorymarks h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: TUfont;
+}
+
+.list-table {
   width: 80%;
   margin-left: 10%;
 }

@@ -25,8 +25,8 @@ class Home extends Component {
                     <Link to="/cards"><Node icon={CreditCard} nodeid="node-1" loadwait="1" /></Link>
                     <Link to="/credit"><Node icon={CreditScore} nodeid="node-2" loadwait="1.8" /></Link>
                     <Link to="/transactions"><Node icon={Transaction} nodeid="node-3" loadwait="1.2" /></Link>
-                    <Node icon={Inquery} nodeid="node-4" loadwait="1.6" />
-                    <Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" />
+                    <Link to="/inquiry"><Node icon={Inquery} nodeid="node-4" loadwait="1.6" /></Link>
+                    <Link to="/derogatorymarks"><Node icon={DerogatoryMark} nodeid="node-5" loadwait="1.4" /></Link>
                     <Profile />
                 </div>
                 <div className="footer">
